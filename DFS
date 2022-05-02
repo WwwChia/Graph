@@ -1,0 +1,9 @@
+DFS(v:start vertex) //visited[1...n] = False
+{
+	visited[v] = True;
+	for each vertex w adjacent to v
+	{
+		if(not visited[w])
+			DFS(w);
+	}
+}
